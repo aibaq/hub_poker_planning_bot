@@ -54,7 +54,8 @@ def parse_message(text, current_username, button_value, force=False):
         if username == current_username:
             users.append({"name": username, "vote": float(button_value)})
         else:
-            users.append({"name": username, "vote": float(user.split(" ")[-1])})
+            value = user.split(" ")[-1]
+            users.append({"name": username, "vote": float(value) if value != "-" else "-"})
 
     if all(user["vote"] != "-" for user in users) or force:
         stats = {
