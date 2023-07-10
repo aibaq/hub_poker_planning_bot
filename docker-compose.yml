@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  hub_poker_planning_bot:
+    restart: unless-stopped
+    build:
+      context: .
+    env_file:
+      - .env
