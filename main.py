@@ -17,7 +17,11 @@ KEYBOARD = [
         InlineKeyboardButton("0.25", callback_data="0.25"),
         InlineKeyboardButton("0.5", callback_data="0.50"),
         InlineKeyboardButton("0.75", callback_data="0.75"),
-        InlineKeyboardButton("1", callback_data="1.00")
+        InlineKeyboardButton("1", callback_data="1.00"),
+        InlineKeyboardButton("1.25", callback_data="1.25"),
+        InlineKeyboardButton("1.5", callback_data="1.50"),
+        InlineKeyboardButton("2", callback_data="2.00"),
+        InlineKeyboardButton("2.5", callback_data="2.50"),
     ],
 ]
 REPLY_MARKUP = InlineKeyboardMarkup(KEYBOARD)
